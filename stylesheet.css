@@ -72,23 +72,24 @@ header {
 }
 .kolom-pencari input{  
   height:25px;
-  max-width:400px;
+  max-width:600px;
   width:100%;
   border-color:#5DC5F9 ;
-  border-radius:3px;
+  border-radius:8px;
 }
 .kolom-pencari button{
   width:30px;
   height:23;
   background-color:#5DC5F9  ;
+  border-radius:8px;
  
   
 }
 .kolom-pencari button:hover {
   background-color:#fff;
   color:#006CFF ;
-  
 }
+
 
 /* untuk animasi (slide bar ) @rnromdhon i07 */
 /* tag body, @namelssi */
@@ -98,8 +99,6 @@ header {
   margin: 0 auto;
   text-align: center;
   padding-top: 180px;
-  background-image: url(background.jpeg);
-  background-size: cover;
 }
 
 .body h2 {
@@ -107,12 +106,20 @@ header {
   font-weight: bold;
   color: brown;
   margin-bottom: 5px;
+  animation: animate 4s infinite alternate-reverse;
 }
 
 .body h3 {
   font-size: 40px;
   font-weight: normal;
   color: brown;
+  animation: animate 4s infinite alternate;
+}
+
+@keyframes animate {
+  0%   { opacity: 0; filter: blur(28px)}
+  10%  { opacity: 0; }
+  90%  { opacity: 1; }
 }
 
 .kategori-barang {
@@ -146,8 +153,10 @@ header {
   box-shadow: none;
 }
 
-
-
+.kategori-barang img {
+  border-bottom: solid 0 brown;
+  padding-bottom: 5px;
+}
 
 /* @Hayrul gatti R I07 */
 .footer{
@@ -158,4 +167,3 @@ header {
 	margin:10px auto;
 	border-color:#000;
 }
-
