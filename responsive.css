@@ -1,4 +1,3 @@
-/*responsive*/
 /*tolong setiap kali nambah style cantumkan komentar yah :) */
 
 
@@ -22,7 +21,7 @@
 .container-bar{
 	width:50%;
 }
-/
+
 
 /* @Hayrul gatti R I07 */
 
@@ -41,11 +40,24 @@
   .kolom-pencari input{
    width:30%;
  }
+ .kolom-pencari button{
+    text-align:center;
+    margin-top:1px;
+ }
+ 
 
 /* @Hayrul gatti R I07 */
 
 .footer{
 	width:100%;
 }
+/*natasya*/
+}@media (max-width: 1000px) {
+  .kategori {
+    flex-wrap: wrap;
+  }
 
+  .kategori-barang {
+    width: 50%;
+  }
 }
